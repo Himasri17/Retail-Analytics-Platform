@@ -44,7 +44,7 @@ python3 generate_data.py
 
 ```bash
 cd backend
-python3 -m venv venv && source venv/bin/activate   # optional but recommended
+python -m venv venv &&  .\venv\Scripts\Activate.ps1   # optional but recommended
 pip install -r requirements.txt
 
 cp .env.example .env          # defaults to local SQLite — zero setup
