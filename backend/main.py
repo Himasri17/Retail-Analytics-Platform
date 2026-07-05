@@ -36,10 +36,10 @@ app = FastAPI(
     version="1.0.0",
 )
 
-FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "http://localhost:5173")
+FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "https://retail-analytics-platform-3rhphsdu8-himasris-projects-c419fd03.vercel.app")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[FRONTEND_ORIGIN, "http://localhost:3000", "http://127.0.0.1:5173"],
+    allow_origins=[FRONTEND_ORIGIN, "https://retail-analytics-platform-3rhphsdu8-himasris-projects-c419fd03.vercel.app", "http://127.0.0.1:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
